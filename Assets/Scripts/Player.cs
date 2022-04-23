@@ -31,26 +31,9 @@ public class Player : MonoBehaviour
         if (col.CompareTag("Enemy"))
         {
             Debug.Log("WE LOST!"); 
+            Score.currentScore = 0;
             SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
         }
     }
-    
-    
-    /*void OnTriggerEnter2D(Collider2D col) 
-    {
-       if(col.CompareTag("Enemy"))
-       {
-           DoDamageToPlayer1(); 
-       }
-
-    }
-    
-
-    void DoDamageToPlayer1() 
-    {
-        Debug.Log("TRIGGER HIT!"); 
-        
-    }
-    */
 
 }

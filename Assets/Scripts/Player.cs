@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
@@ -24,4 +25,32 @@ public class Player : MonoBehaviour
             Mathf.Clamp(transform.position.y, -5f, 5f), transform.position.z); 
 
     }
+
+    void OnTriggerEnter2D (Collider2D col) 
+    {
+        if (col.CompareTag("Enemy"))
+        {
+            Debug.Log("WE LOST!"); 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+        }
+    }
+    
+    
+    /*void OnTriggerEnter2D(Collider2D col) 
+    {
+       if(col.CompareTag("Enemy"))
+       {
+           DoDamageToPlayer1(); 
+       }
+
+    }
+    
+
+    void DoDamageToPlayer1() 
+    {
+        Debug.Log("TRIGGER HIT!"); 
+        
+    }
+    */
+
 }

@@ -6,6 +6,8 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemy;
 
+    public Transform[] spawnPoints; 
+
     public float countdownTimer = 2f; 
     void Update ()
     {
@@ -23,7 +25,10 @@ public class EnemySpawner : MonoBehaviour
 
     void spawnEnemy() 
     {
-        Instantiate(enemy); 
+        int randomIndex = Random.Range(0, spawnPoints.Length); 
+        Transform spawnPoint = spawnPoints[randomIndex]; 
+
+        Instantiate(enemy, spawnPoint.position, spawnPoint.rotation); 
     }
 
 

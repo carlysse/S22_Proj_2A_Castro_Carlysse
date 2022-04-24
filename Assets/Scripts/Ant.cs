@@ -28,7 +28,7 @@ public class Ant : MonoBehaviour
 
     IEnumerator SelfDestruct() 
     {
-        yield return new WaitForSeconds(10f); 
+        yield return new WaitForSeconds(8f); 
         Destroy(enemy); 
     }
 }

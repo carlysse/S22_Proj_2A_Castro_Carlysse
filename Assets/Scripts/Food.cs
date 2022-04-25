@@ -8,7 +8,7 @@ public class Food : MonoBehaviour
     public GameObject food; 
     void OnTriggerEnter2D() {
         Debug.Log("Food obtained!"); 
-        //Score.currentScore += 1; 
+        Score.currentScore += 1; 
         SelfDestruct(); 
     }
 

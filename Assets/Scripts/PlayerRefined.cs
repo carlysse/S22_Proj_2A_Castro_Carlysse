@@ -11,6 +11,24 @@ public class PlayerRefined : MonoBehaviour
   
   Vector2 movement; 
 
+  private AudioClip collectSound; 
+  private AudioClip deathSound;
+  private AudioClip nextAreaSound; 
+  private AudioSource audioSource; 
+  int expectedScore = Score.currentScore + 1; 
+
+  void Awake() 
+  {
+      Debug.Log("Scene loaded: " + SceneManager.GetActiveScene().name); 
+      audioSource = GetComponent<AudioSource>(); 
+  }
+
+  void Start() {
+      collectSound = (AudioClip)Resources.Load("collectSound"); 
+      deathSound = (AudioClip)Resources.Load("deathSound"); 
+      nextAreaSound = (AudioClip)Resources.Load("nextAreaSound"); 
+      
+  }
 
   void Update () 
   {
@@ -38,7 +56,39 @@ public class PlayerRefined : MonoBehaviour
         {
             Debug.Log("WE LOST!"); 
             Score.currentScore = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name); 
+            StartCoroutine(PlayDeathSound());
         }
+
+        if(col.CompareTag("Food"))
+        {
+            audioSource.clip = collectSound; 
+            audioSource.Play(); 
+        }
+
+        if(col.CompareTag("NextArea"))
+        {
+            StartCoroutine(PlayNextAreaSound()); 
+        }
+    }
+
+    IEnumerator PlayDeathSound() 
+    {
+        audioSource.clip = deathSound;
+        audioSource.Play(); 
+        yield return new WaitUntil(() => audioSource.isPlaying == false); 
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    IEnumerator PlayNextAreaSound() 
+    {
+        Debug.Log("Current Score: " + Score.currentScore + "  Expected Score: " + expectedScore );
+        if (Score.currentScore == expectedScore) {
+            audioSource.clip = nextAreaSound; 
+            audioSource.Play(); 
+            yield return new WaitUntil(() => audioSource.isPlaying == false); 
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            
+        }
+    
     }
 }

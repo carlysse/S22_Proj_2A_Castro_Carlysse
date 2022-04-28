@@ -9,6 +9,8 @@ public class CustomScene_UI : MonoBehaviour
    public Dropdown dropdown_Bread;
    public Dropdown dropdown_Level; 
 
+   public Button button_Menu;
+
    public Text txt_LevelInfo; 
    public static int breadType; 
 
@@ -50,7 +52,7 @@ public class CustomScene_UI : MonoBehaviour
         }
         else if (dropdown_Level.value == 1) {
             sceneToLoad = "Game_Advanced"; 
-            txt_LevelInfo.text = "Collect 25 loaves of bread to win!";
+            txt_LevelInfo.text = "Collect 20 loaves of bread to win!";
         }
         else if (dropdown_Level.value == 2) {
             sceneToLoad = "Game_Expert"; 
@@ -61,39 +63,14 @@ public class CustomScene_UI : MonoBehaviour
 
     public void StartButton_LoadLevel()
     { 
+        playerName = inputField.text; 
         SceneManager.LoadScene(sceneToLoad); 
 
     }
 
-    public void StoreName() 
-    {
-        playerName = inputField.GetComponent<Text>().text; 
+     public void LoadMenu() {
+        SceneManager.LoadScene("MainMenu"); 
     }
 
 
-
-
-
-/*   void Start()
-   {
-       CustomUIReferences(); 
-
-   }
-
-    private void CustomUIReferences()
-   {
-       selectedBreadTxt = GameObject.Find("selectedBreadTxt").GetComponent<Text>(); 
-       dropdwn_Bread = GameObject.Find("dropdown_Bread").GetComponent<DropDown>(); 
-       dropdown_Bread.onValueChanged.AddListener(delegate {CallBack_Dropdown_SetBread(dropdown_Bread); });
-       selectedBreadTxt.text = dropdown_Bread.options[dropdown_Bread.value].text;
-
-
-
-   }
-
-    void CallBack_Dropdown_SetBread(Dropdown setBread) 
-    {
-        selectedBreadTxt.text = dropdown_Bread.options[dropdown_Bread.value].text;
-    }
-*/
 }

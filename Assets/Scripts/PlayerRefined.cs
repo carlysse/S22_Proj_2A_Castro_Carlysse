@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class PlayerRefined : MonoBehaviour
 {
+
+    
   public float moveSpeed = 5f; 
   public Rigidbody2D rb; 
   public Animator animator; 
@@ -27,6 +29,7 @@ public class PlayerRefined : MonoBehaviour
       collectSound = (AudioClip)Resources.Load("collectSound"); 
       deathSound = (AudioClip)Resources.Load("deathSound"); 
       nextAreaSound = (AudioClip)Resources.Load("nextAreaSound"); 
+      Debug.Log("Player name is: " + CustomScene_UI.playerName); 
       
   }
 

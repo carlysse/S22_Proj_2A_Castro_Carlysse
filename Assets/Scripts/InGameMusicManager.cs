@@ -8,6 +8,8 @@ public class InGameMusicManager : MonoBehaviour
 
     void Awake() 
     {
+        Destroy(GameObject.Find("MenuMusicManager"));
+
         DontDestroyOnLoad(this); 
 
         if(musicManagerInstance == null) 

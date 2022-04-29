@@ -1,0 +1,57 @@
+Bibliography 
+
+Script references:
+
+	https://www.youtube.com/watch?v=wZt6qDDx-2o&t=2387s
+	https://www.youtube.com/watch?v=CFf2woe4gdg
+	https://www.youtube.com/watch?v=whzomFgjT50
+	https://www.youtube.com/watch?v=pXn9icmreXE
+	https://www.youtube.com/watch?v=_5ekbSrNcPU
+	https://www.youtube.com/watch?v=JivuXdrIHK0
+
+	https://docs.unity3d.com/Manual/index.html
+	https://answers.unity.com/questions/1205904/collision-detection-not-working-10.html
+	https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+
+
+Art references:
+
+	All art and animations were created by me except for the buttons!
+
+	Buttons:
+		http://pixelartmaker.com/art/f5aead99dffe78e
+		http://pixelartmaker.com/art/2a035890f5d8e83
+		http://pixelartmaker.com/art/79f2ec1fd797740
+
+Audio references: 
+	
+	Background Music: 
+		"Funny Bit" - by David Renda
+			https://www.fesliyanstudios.com/royalty-free-music/downloads-c/8-bit-music/6
+	
+		"Life in 8it" - by Eitan Epstein Music
+			https://www.melodyloops.com/my-music/longoloops/life-in-8bit/
+
+		"Coconut Beach Chill" - by Ionics Music
+			https://www.melodyloops.com/my-music/longoloops/coconut-beach-chill/
+
+	Sound Effects: 
+		"Fruit collect 1" - by JDWasabi
+		"Big Egg collect 1" - by JDWasabi
+			https://jdwasabi.itch.io/8-bit-16-bit-sound-effects-pack
+
+Font references:
+	
+	"Press Start 2P" - designed by CodeMan38
+		https://fonts.google.com/specimen/Press+Start+2P?query=press
+		
+
+
+	
+	
+
+		
+	
+
+	
+

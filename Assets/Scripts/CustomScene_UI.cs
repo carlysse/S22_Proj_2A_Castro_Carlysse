@@ -21,6 +21,7 @@ public class CustomScene_UI : MonoBehaviour
 
    void Start() {
        breadType = 0; 
+       Score.currentScore = 0; 
        sceneToLoad = "Game";
        txt_LevelInfo.text = "Collect 10 loaves of bread to win!";
        playerName = "Player";

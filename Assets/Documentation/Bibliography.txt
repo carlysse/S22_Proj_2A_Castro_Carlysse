@@ -11,7 +11,7 @@ Script references:
 
 	https://docs.unity3d.com/Manual/index.html
 	https://answers.unity.com/questions/1205904/collision-detection-not-working-10.html
-	https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadScene.html
+
 
 
 Art references:

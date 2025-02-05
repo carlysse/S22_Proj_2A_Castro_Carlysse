@@ -7,7 +7,7 @@ To play the game:
       ProjectSettings
       S22_Proj_2A_Castro_Carlysse
       .gitignore
-  - Open "S22_Proj_2A_Castro_Carlysse
+  - Open "S22_Proj_2A_Castro_Carlysse"
   - Game should be launched!
 
 How to play: 

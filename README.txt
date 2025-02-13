@@ -5,9 +5,11 @@ To play the game:
       MonoBleedingEdge
       Packages
       ProjectSettings
-      S22_Proj_2A_Castro_Carlysse
+      S22_Proj_2A_Castro_Carlysse_Data
       .gitignore
-  - Open "S22_Proj_2A_Castro_Carlysse"
+      ReadME.txt
+      S22_Proj_2A_Castro_Carlysse.exe
+  - Open "S22_Proj_2A_Castro_Carlysse.exe"
   - Game should be launched!
 
 How to play: 
